@@ -1,13 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
 import { Element } from "react-scroll";
+import { galleryFiles } from '../data';
 
-/* files in public/screenshot*/
-export const files = [
-    { name: "0.png" },
-    { name: "1.png" },
-    { name: "2.png" },
-    { name: "3.png" },
-];
+ 
 
 function Gallery() {
     return (
@@ -26,9 +21,9 @@ function Gallery() {
                 </div>
                 <Carousel
                     className='relative lg:w-1/2'>
-                    {files.map((file) => (
+                    {galleryFiles.map((file) => (
                         <Carousel.Item key={file.name}>
-                            <img src={'./screenshot/' + file.name} className="h-full" alt={file.name} />
+                            <img src={file.name} className="h-full" alt={file.name} />
                         </Carousel.Item>
                     ))}
                 </Carousel>

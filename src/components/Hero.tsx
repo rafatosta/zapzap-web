@@ -1,5 +1,6 @@
 import laptop from '/laptop-art.svg'
 import { Link as ScrollLink } from "react-scroll";
+import { appName, description } from '../data';
 
 function Hero() {
     return (
@@ -11,10 +12,10 @@ function Hero() {
                 <img src={laptop} className="w-64" alt="Laptop logo" />
                 <div className='flex flex-col justify-center items-center w-2/3 gap-y-4'>
                     <p className="text-5xl lg:text-7xl text-dark dark:text-white font-extrabold">
-                        ZapZap
+                        {appName}
                     </p>
                     <p className="text-base lg:text-xl text-dark dark:text-white text-center md:w-2/3 lg:w-2/5">
-                        A Linux WhatsApp webapp for with a native application experience.
+                        {description}
                     </p>
                 </div>
                 <div className='flex flex-row gap-x-6 justify-center items-center'>
