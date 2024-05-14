@@ -15,9 +15,9 @@ export const navigationLinks = [
 
 /* Features */
 
-export const featiresTitle = "Features"
+export const featuresTitle = "Features"
 
-export const featuresDescription = "Zapzap aims to facilitate the use of WhatsappWeb on Linux, bringing the webapp experience closer to a native application."
+export const featuresSub = "Zapzap aims to facilitate the use of WhatsappWeb on Linux, bringing the webapp experience closer to a native application."
 
 export const featuresList = [
     { title: "Multiple users:", desc: " use multiple WhatsApp accounts at the same time." },
@@ -31,12 +31,16 @@ export const featuresList = [
 
 /* Gallery */
 
+export const galleryTitle = "Gallery"
+
+export const gallerySub = "See some ZapZap screenshots."
+
 /* files in public/screenshot*/
 export const galleryFiles = [
-    { name: "./screenshot/0.png" },
-    { name: "./screenshot/1.png" },
-    { name: "./screenshot/2.png" },
-    { name: "./screenshot/3.png" },
+    { name: "/screenshot/0.png" },
+    { name: "/screenshot/1.png" },
+    { name: "/screenshot/2.png" },
+    { name: "/screenshot/3.png" },
 ];
 
 export const flathubURL = "https://flathub.org/apps/com.rtosta.zapzap"
