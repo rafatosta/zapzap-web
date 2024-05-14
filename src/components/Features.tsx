@@ -1,5 +1,5 @@
 import zapiIcon from '/zapzap-icon.svg'
-import { featuresDescription, featuresList } from "../data";
+import { featuresSub, featuresList, featuresTitle } from "../data";
 
 function Features() {
     return (
@@ -7,10 +7,10 @@ function Features() {
         <div id="features" className="h-screen mx-auto bg-[#202C33] flex flex-col justify-center items-center gap-8">
             <div className="flex flex-col justify-center items-center w-2/3 gap-y-4">
                 <p className="text-[#F0F2F5] text-4xl lg:text-6xl font-extrabold">
-                    Features
+                    {featuresTitle}
                 </p>
                 <p className="text-[#F0F2F5] text-base lg:text-xl text-center md:w-2/3 lg:w-2/5">
-                    {featuresDescription}
+                    {featuresSub}
                 </p>
             </div>
 
