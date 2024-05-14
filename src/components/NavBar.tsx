@@ -16,7 +16,7 @@ function NavBar() {
 
 
     return (
-        <nav className="bg-body-tertiary relative bg-[url('/background.webp')] shadow-sm">
+        <nav className="bg-body-tertiary fixed z-50 w-full bg-[url('/background.webp')] shadow-sm">
             <div className="absolute inset-0 bg-[#F0F2F5]/90 dark:bg-[#202C33]/90"></div>
             <div className="relative max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
                 {/* Logo */}
