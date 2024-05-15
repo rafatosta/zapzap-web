@@ -4,7 +4,7 @@ import { Element } from 'react-scroll'
 
 function Hero() {
     return (
-        <Element name="#aa">
+        <Element name="#home">
             <div className="relative bg-[url('/background.webp')] bg-[#F0F2F5] dark:bg-[#202C33] text-white">
                 <div className="absolute inset-0 bg-[#F0F2F5]/90 dark:bg-[#202C33]/90"></div>
                 <div className="relative h-screen mx-auto flex flex-col justify-center items-center gap-8">

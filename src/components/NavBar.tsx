@@ -8,7 +8,10 @@ function NavBar() {
 
     useEffect(() => {
         if (window.location.hash == "#donate") {
-            scroller.scrollTo('#donate')
+            scroller.scrollTo('#donate', {
+                duration: 500,
+                smooth: true,
+            })
         }
     }, [])
 
@@ -32,6 +35,7 @@ function NavBar() {
                         spy={true}
                         hashSpy={true}
                         smooth={true}
+                        duration={500}
                         activeStyle={{
                             color: 'rgb(5 122 85 / var(--tw-text-opacity))',
                             fontWeight: 'bold'
