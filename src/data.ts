@@ -37,10 +37,10 @@ export const gallerySub = "See some ZapZap screenshots."
 
 /* files in public/screenshot*/
 export const galleryFiles = [
-    { name: "/screenshot/0.png" },
-    { name: "/screenshot/1.png" },
-    { name: "/screenshot/2.png" },
-    { name: "/screenshot/3.png" },
+    { name: "./screenshot/0.png" },
+    { name: "./screenshot/1.png" },
+    { name: "./screenshot/2.png" },
+    { name: "./screenshot/3.png" },
 ];
 
 export const flathubURL = "https://flathub.org/apps/com.rtosta.zapzap"
