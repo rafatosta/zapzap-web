@@ -1,8 +1,15 @@
 import { Navbar } from "flowbite-react";
 import { appName, navigationLinks } from '../data';
 import logo from '/zapzap-icon.svg'
+import { useEffect } from "react";
 
 function NavBar() {
+
+    useEffect(() => { 
+        if (window.location.hash == "#donate") {
+            window.location.href = "#donate"
+        }
+    }, [])
 
     return (
         <Navbar rounded
@@ -15,9 +22,9 @@ function NavBar() {
             <Navbar.Toggle className="relative" />
             <Navbar.Collapse className="relative">
                 {navigationLinks.map((link) => (
-                    <Navbar.Link key={link.name} 
-                    href={link.href} 
-                    className="text-[#202C33] dark:text-[#F0F2F5] hover:text-green-600 text-md lg:text-lg">{link.name}</Navbar.Link>
+                    <Navbar.Link key={link.name}
+                        href={link.href}
+                        className="text-[#202C33] dark:text-[#F0F2F5] hover:text-green-600 text-md lg:text-lg">{link.name}</Navbar.Link>
                 ))}
             </Navbar.Collapse>
         </Navbar>
