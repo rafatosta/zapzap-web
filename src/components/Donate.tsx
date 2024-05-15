@@ -6,14 +6,14 @@ import { Element } from 'react-scroll'
 function Donate() {
     return (
         <Element name="#donate">
-            <div className="relative bg-[url('/background.webp')] h-screen mx-auto bg-[#F0F2F5] dark:bg-[#202C33] flex flex-col justify-center items-center gap-8 py-20">
-                <div className="absolute inset-0 bg-[#F0F2F5]/90 dark:bg-[#202C33]/90"></div>
+            <div className="relative bg-[url('/background.webp')] h-screen mx-auto bg-[#F0F2F5]  flex flex-col justify-center items-center gap-8 py-20">
+                <div className="absolute inset-0 bg-[#F0F2F5]/90 "></div>
 
                 <div className=' relative flex flex-col justify-center items-center w-2/3 gap-y-4'>
-                    <p className="text-4xl lg:text-6xl text-[#202C33] dark:text-[#F0F2F5] font-extrabold">
+                    <p className="text-4xl lg:text-6xl text-[#202C33]  font-extrabold">
                         Donate
                     </p>
-                    <p className="text-base lg:text-xl text-[#202C33] dark:text-[#F0F2F5] text-center md:w-2/3 lg:w-2/5">
+                    <p className="text-base lg:text-xl text-[#202C33]  text-center md:w-2/3 lg:w-2/5">
                         Make contribute by making a donation to the project.
                     </p>
                 </div>

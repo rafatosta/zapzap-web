@@ -5,15 +5,15 @@ import { Element } from 'react-scroll'
 function Hero() {
     return (
         <Element name="#home">
-            <div className="relative bg-[url('/background.webp')] bg-[#F0F2F5] dark:bg-[#202C33] text-white">
-                <div className="absolute inset-0 bg-[#F0F2F5]/90 dark:bg-[#202C33]/90"></div>
+            <div className="relative bg-[url('/background.webp')] bg-[#F0F2F5]  text-white">
+                <div className="absolute inset-0 bg-[#F0F2F5]/90 "></div>
                 <div className="relative h-screen mx-auto flex flex-col justify-center items-center gap-8">
                     <img src={laptop} className="w-64" alt="Laptop logo" />
                     <div className='flex flex-col justify-center items-center w-2/3 gap-y-4'>
-                        <p className="text-5xl lg:text-7xl dark:text-[#F0F2F5] text-[#202C33] font-extrabold">
+                        <p className="text-5xl lg:text-7xl  text-[#202C33] font-extrabold">
                             {appName}
                         </p>
-                        <p className="text-base lg:text-xl dark:text-[#F0F2F5] text-[#202C33] text-center md:w-2/3 lg:w-2/5">
+                        <p className="text-base lg:text-xl  text-[#202C33] text-center md:w-2/3 lg:w-2/5">
                             {appDescription}
                         </p>
                     </div>

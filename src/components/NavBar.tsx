@@ -19,17 +19,17 @@ function NavBar() {
     return (
         <Navbar rounded
             className="bg-body-tertiary fixed z-50 w-full bg-[url('/background.webp')] shadow-sm">
-            <div className="absolute inset-0 bg-[#F0F2F5]/90 dark:bg-[#202C33]/90"></div>
+            <div className="absolute inset-0 bg-[#F0F2F5]/90"></div>
             <Navbar.Brand as={Link} to="#home" smooth={true} className="relative cursor-pointer">
                 <img src={logo} className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
-                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">{appName}</span>
+                <span className="self-center whitespace-nowrap text-xl font-semibold ">{appName}</span>
             </Navbar.Brand>
             <Navbar.Toggle className="relative" />
             <Navbar.Collapse className="relative">
                 {navigationLinks.map((link) => (
                     <Navbar.Link as={Link}
                         key={link.name}
-                        className="text-[#202C33] dark:text-[#F0F2F5] hover:text-green-600 cursor-pointer"
+                        className="text-[#202C33] hover:text-green-600 cursor-pointer"
                         to={link.href}
                         activeClass="active"
                         spy={true}
