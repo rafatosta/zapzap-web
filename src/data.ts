@@ -1,8 +1,23 @@
+
+/** General */
 export const appName = "ZapZap"
 
-export const description = "A Linux WhatsApp webapp for with a native application experience."
+export const appDescription = "A Linux WhatsApp webapp for with a native application experience."
 
-export const featuresDescription = "Zapzap aims to facilitate the use of WhatsappWeb on Linux, bringing the webapp experience closer to a native application."
+export const navigationLinks = [
+    { name: "Home", href: "#home" },
+    { name: "Features", href: "#features" },
+    { name: "Gallery", href: "#gallery" },
+    { name: "Download", href: "#download" },
+    { name: "Donate", href: "#donate" },
+];
+
+
+/* Features */
+
+export const featuresTitle = "Features"
+
+export const featuresSub = "Zapzap aims to facilitate the use of WhatsappWeb on Linux, bringing the webapp experience closer to a native application."
 
 export const featuresList = [
     { title: "Multiple users:", desc: " use multiple WhatsApp accounts at the same time." },
@@ -13,6 +28,12 @@ export const featuresList = [
     { title: "Themes:", desc: "the app adapts to the global theme (light or dark)." },
     { title: "Notifications:", desc: "native notifications for the Dekstop Environment of your choice." },
 ]
+
+/* Gallery */
+
+export const galleryTitle = "Gallery"
+
+export const gallerySub = "See some ZapZap screenshots."
 
 /* files in public/screenshot*/
 export const galleryFiles = [
