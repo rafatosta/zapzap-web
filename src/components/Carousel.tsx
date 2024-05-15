@@ -3,7 +3,7 @@ import { galleryFiles } from "../data";
 
 function Carousel() {
     return (
-        <div className="w-full h-full lg:w-3/5">
+        <div className="w-full h-1/2 lg:h-3/4 lg:w-1/2 sm:w-3/4">
             <CarouselFlowbite>
                 {galleryFiles.map((file) => (
                     <img key={file.name} src={file.name} className="h-full" alt={file.name} />
