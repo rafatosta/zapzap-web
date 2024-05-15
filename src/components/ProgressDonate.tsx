@@ -1,7 +1,7 @@
 import { Progress } from "flowbite-react";
 import { currentValueDolar, dataUpdate, goalValueDolar, notebookLink, progress } from "../data";
 
-function ProgreesDonate() {
+function ProgressDonate() {
     return (
         <div className="relative flex flex-col justify-center items-center gap-1 lg:gap-4 w-2/3 bg-white p-2 lg:p-6 rounded-xl shadow-xl text-[#202C33]">
             <p className="font-bold">Let's buy a Laptop for the Dev</p>
@@ -34,4 +34,4 @@ function ProgreesDonate() {
     );
 }
 
-export default ProgreesDonate;
+export default ProgressDonate;
