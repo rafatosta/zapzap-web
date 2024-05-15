@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-a:hover {
-    cursor: pointer;
+html {
+    scroll-behavior: smooth;
 }

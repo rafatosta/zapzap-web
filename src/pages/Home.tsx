@@ -12,6 +12,9 @@ function Home() {
             <Features />
             <Gallery />
             <Download />
+
+
+
             <Donate />
         </main>
         {/* <Footer /> */}
