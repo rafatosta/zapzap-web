@@ -19,7 +19,7 @@ function Hero() {
                     <a
                         href="#download"
                     >
-                        <button className="bg-green-600 hover:bg-green-700 text-light text-sm lg:text-md font-semibold rounded-lg p-3">
+                        <button className="bg-green-600 hover:bg-green-700 text-[#F0F2F5] text-sm lg:text-md font-semibold rounded-lg p-3">
                             Get Started
                         </button>
                     </a>
@@ -28,7 +28,7 @@ function Hero() {
                         href="#features"
                     >
                         <button
-                            className='bg-gray-600 hover:bg-gray-700 text-light text-sm lg:text-md font-semibold rounded-lg p-3'>
+                            className='bg-gray-600 hover:bg-gray-700 text-[#F0F2F5] text-sm lg:text-md font-semibold rounded-lg p-3'>
                             Learn More
                         </button>
                     </a>

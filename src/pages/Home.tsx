@@ -1,8 +1,8 @@
 import Hero from '../components/Hero'
 import Features from '../components/Features'
 import Gallery from '../components/Gallery'
-/*import Download from '../components/Download'
-import Donate from '../components/Donate' */
+import Download from '../components/Download'
+import Donate from '../components/Donate'
 /* import Footer from '../components/Footer' */
 
 function Home() {
@@ -11,10 +11,11 @@ function Home() {
         <main>
             <Features />
             <Gallery />
-            {/* 
-            
             <Download />
-            <Donate /> */}
+
+
+
+            <Donate />
         </main>
         {/* <Footer /> */}
     </>);
