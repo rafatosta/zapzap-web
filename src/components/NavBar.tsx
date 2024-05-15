@@ -1,32 +1,61 @@
-import { Navbar } from "flowbite-react";
-import { appName, navigationLinks } from '../data';
+import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link as ScrollLink } from "react-scroll";
 import logo from '/zapzap-icon.svg'
-import { useEffect } from "react";
+import { useState } from "react";
+
+export const navigationLinks = [
+    { name: "Home", to: "Home" },
+    { name: "Features", to: "Features" },
+    { name: "Gallery", to: "Gallery" },
+    { name: "Download", to: "Download" },
+    { name: "Donate", to: "Donate" },
+];
 
 function NavBar() {
 
-    useEffect(() => { 
-        if (window.location.hash == "#donate") {
-            window.location.href = "#donate"
-        }
-    }, [])
+    const toggleExpanded = () => setExpanded((prevState) => !prevState);
+    const [isExpanded, setExpanded] = useState(false);
+    const closeExpanded = function () {
+        setTimeout(function () {
+            setExpanded(false);
+        }, 250);
+    };
 
     return (
-        <Navbar rounded
-            className="bg-body-tertiary fixed z-50 w-full bg-[url('/background.webp')] shadow-sm">
-            <div className="absolute inset-0 bg-[#F0F2F5]/90 dark:bg-[#202C33]/90"></div>
-            <Navbar.Brand href="#home" className="relative">
-                <img src={logo} className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
-                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">{appName}</span>
-            </Navbar.Brand>
-            <Navbar.Toggle className="relative" />
-            <Navbar.Collapse className="relative">
-                {navigationLinks.map((link) => (
-                    <Navbar.Link key={link.name}
-                        href={link.href}
-                        className="text-[#202C33] dark:text-[#F0F2F5] hover:text-green-600 text-md lg:text-lg">{link.name}</Navbar.Link>
-                ))}
-            </Navbar.Collapse>
+        <Navbar
+            id='nav'
+            expand="lg"
+            expanded={isExpanded}
+            fixed="top"
+            className="bg-body-tertiary relative bg-[url('/background.webp')] shadow-sm">
+            <div
+                className="absolute inset-0 bg-light/90"
+            ></div>
+            <Container className="relative">
+                <Navbar.Brand className='flex flex-row justify-center itens-center'>
+                    <img src={logo} className="mr-3 h-6 sm:h-9" alt="ZapZap Logo" />
+                    <span className="self-center whitespace-nowrap text-xl font-semibold text-dark dark:text-light">ZapZap</span>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav"
+                    onClick={toggleExpanded} />
+                <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+                    <Nav navbarScroll >
+                        {navigationLinks.map((item) => (
+                            <Nav.Item key={item.name}>
+                                <ScrollLink
+                                    to={item.to}
+                                    spy={true}
+                                    activeClass="active"
+                                    className="nav-link"
+                                    onClick={closeExpanded}
+                                >
+                                    {item.name}
+                                </ScrollLink>
+                            </Nav.Item>
+                        ))}
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
         </Navbar>
     );
 }

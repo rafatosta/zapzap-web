@@ -1,13 +1,14 @@
 import NavBar from './components/NavBar'
 import Home from './pages/Home'
+import { Element } from "react-scroll";
 
 function App() {
 
   return (
     <>
-      <div id="home">
+      <Element name={"Home"} id="home">
         <NavBar />
-      </div>
+      </Element >
       <Home />
     </>
   )
