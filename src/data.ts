@@ -43,6 +43,26 @@ export const galleryFiles = [
     { name: "./screenshot/3.png" },
 ];
 
+
+
+/** Donate */
+
+export const dataUpdate = '05-15-2024'
+
+export const currentValueReal = 74.10
+
+export const dollarReal = 5.14
+
+export const currentValueDolar = Math.round(currentValueReal / dollarReal)
+
+export const goalValueDolar = 1200
+
+export const progress = Math.round(100 * currentValueDolar / goalValueDolar)
+
+export const notebookLink = 'https://github.com/rafatosta/zapzap/issues'
+
+/** Downloads */
+
 export const flathubURL = "https://flathub.org/apps/com.rtosta.zapzap"
 
 export const fedoraCoprURL = "https://copr.fedorainfracloud.org/coprs/rafatosta/zapzap/"
