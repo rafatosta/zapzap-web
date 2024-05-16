@@ -1,6 +1,7 @@
 import laptop from '/laptop-art.svg'
 import { appName, appDescription } from '../data';
 import { Element } from 'react-scroll'
+import { Link } from 'react-scroll';
 
 function Hero() {
     return (
@@ -18,23 +19,24 @@ function Hero() {
                         </p>
                     </div>
                     <div className='flex flex-row gap-x-6 justify-center items-center'>
-                        <a
-                            href="#download"
+                        <Link to='#download'
+                            smooth={true}
+                            duration={500}
                         >
                             <button className="bg-green-600 hover:bg-green-700 text-[#F0F2F5] text-sm lg:text-md font-semibold rounded-lg p-3">
                                 Get Started
                             </button>
-                        </a>
-
-                        <a
-                            href="#features"
+                        </Link>
+                        <Link to='#features'
+                            smooth={true}
+                            duration={500}
                         >
                             <button
                                 className='bg-gray-600 hover:bg-gray-700 text-[#F0F2F5] text-sm lg:text-md font-semibold rounded-lg p-3'>
                                 Learn More
                             </button>
-                        </a>
 
+                        </Link>
                     </div>
                 </div>
             </div >
