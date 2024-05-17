@@ -65,6 +65,8 @@ export const flathubURL = "https://flathub.org/apps/com.rtosta.zapzap"
 
 export const fedoraCoprURL = "https://copr.fedorainfracloud.org/coprs/rafatosta/zapzap/"
 
+export const appImageURL = "https://github.com/rafatosta/zapzap/releases/latest"
+
 export const issuesURL = "https://github.com/rafatosta/zapzap/issues"
 
 export const licenceURL = "https://github.com/rafatosta/zapzap/blob/main/LICENSE"

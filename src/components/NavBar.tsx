@@ -21,7 +21,7 @@ function NavBar() {
             className="bg-body-tertiary fixed z-50 w-full bg-[url('/background.webp')] shadow-sm">
             <div className="absolute inset-0 bg-[#F0F2F5]/90"></div>
             <Navbar.Brand as={Link} to="#home" smooth={true} className="relative cursor-pointer">
-                <img src={logo} className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
+                <img src={logo} className="mr-3 h-6 sm:h-9" alt="ZapZap Logo" />
                 <span className="self-center whitespace-nowrap text-xl font-semibold ">{appName}</span>
             </Navbar.Brand>
             <Navbar.Toggle className="relative" />
