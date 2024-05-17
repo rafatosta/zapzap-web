@@ -1,5 +1,5 @@
 import { Progress } from "flowbite-react";
-import { currentValueDolar, dataUpdate, goalValueDolar, notebookLink, progress } from "../data";
+import { currentValueDolar, dataUpdate, goalValueDolar, progress } from "../data";
 
 function ProgressDonate() {
     return (
@@ -23,7 +23,6 @@ function ProgressDonate() {
                 />
                 <div className="flex flex-col justify-center items-center pt-2 lg:pt-6">
                     <p className="text-center text-xs text-[#202C33]/50">Update: {dataUpdate}</p>
-                    <p className="text-sm lg:text-lg text-center"><a href={notebookLink} target="_blank">I accept laptop suggestions!</a></p>
                 </div>
             </div>
 
