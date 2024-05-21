@@ -47,11 +47,11 @@ export const galleryFiles = [
 
 /** Donate */
 
-export const dataUpdate = '05-17-2024'
+export const dataUpdate = '05-21-2024'
 
-export const currentValueReal = 159.56
+export const currentValueReal = 623.28
 
-export const currentValueDolar = 31.26
+export const currentValueDolar = 121.87
 
 export const goalValueDolar = 1200
 
