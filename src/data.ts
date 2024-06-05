@@ -49,9 +49,9 @@ export const galleryFiles = [
 
 export const dataUpdate = '05-24-2024'
 
-export const currentValueReal = 632.52
+export const currentValueReal = 837.16
 
-export const currentValueDolar = 122.81
+export const currentValueDolar = 165.01
 
 export const goalValueDolar = 1200
 
