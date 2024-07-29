@@ -35,11 +35,23 @@ function Hero() {
                                 className='bg-gray-600 hover:bg-gray-700 text-[#F0F2F5] text-sm lg:text-md font-semibold rounded-lg p-3'>
                                 Learn More
                             </button>
-
                         </Link>
                     </div>
                 </div>
             </div >
+            <div
+                className='flex flex-col items-center justify-center absolute inset-x-0 bottom-0 m-12'
+            >
+                <Link to='#donate'
+                    smooth={true}
+                    duration={500}
+                >
+                    <button className="motion-safe:animate-bounce bg-gray-100/50 border border-green-600 hover:bg-gray-600/10 w-[450px] hover:font-bold text-[#202C33] text-sm lg:text-md font-semibold rounded-lg p-3">
+                        Contribute to the project
+                    </button>
+                </Link>
+            </div>
+
 
         </Element>
 
