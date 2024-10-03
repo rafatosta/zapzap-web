@@ -38,8 +38,6 @@ const Donate: React.FC = () => (
                     GitHub Sponsor
                 </a>
             </div>
-
-            <p className="relative font-bold text-[#202C33]">Thanks for the support!</p>
         </div>
     </Element>
 );

@@ -44,21 +44,6 @@ export const galleryFiles = [
 ];
 
 
-
-/** Donate */
-
-export const dataUpdate = '06-28-2024'
-
-export const currentValueReal = 1550.00
-
-export const currentValueDolar = 281.79
-
-export const goalValueDolar = 1200
-
-export const progress = Math.round(100 * currentValueDolar / goalValueDolar)
-
-export const notebookLink = 'https://github.com/rafatosta/zapzap/issues'
-
 /** Downloads */
 
 export const flathubURL = "https://flathub.org/apps/com.rtosta.zapzap"
