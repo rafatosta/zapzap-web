@@ -46,7 +46,7 @@ function Hero() {
                     smooth={true}
                     duration={500}
                 >
-                    <button className="motion-safe:animate-bounce bg-gray-100/50 border border-green-600 hover:bg-gray-600/10 w-[450px] hover:font-bold text-[#202C33] text-sm lg:text-md font-semibold rounded-lg p-3">
+                    <button className="motion-safe:animate-bounce bg-gray-100/50 border border-green-600 hover:bg-gray-600/10 w-[250px] md:w-[450px] hover:font-bold text-[#202C33] text-sm lg:text-md font-semibold rounded-lg p-3">
                         Contribute to the project
                     </button>
                 </Link>
