@@ -5,11 +5,11 @@ export const appName = "ZapZap"
 export const appDescription = "A Linux WhatsApp webapp for with a native application experience."
 
 export const navigationLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Features", href: "#features" },
-    { name: "Gallery", href: "#gallery" },
-    { name: "Download", href: "#download" },
-    { name: "Donate", href: "#donate" },
+    { name: "Home", href: "home" },
+    { name: "Features", href: "features" },
+    { name: "Gallery", href: "gallery" },
+    { name: "Download", href: "download" },
+    { name: "Donate", href: "donate" },
 ];
 
 
@@ -17,7 +17,7 @@ export const navigationLinks = [
 
 export const featuresTitle = "Features"
 
-export const featuresSub = "Zapzap aims to facilitate the use of WhatsappWeb on Linux, bringing the webapp experience closer to a native application."
+export const featuresSub = "Find out the innovative features that make our application more efficient and intuitive.Technology at the service of your productivity!"
 
 export const featuresList = [
     { title: "Multiple users:", desc: " use multiple WhatsApp accounts at the same time." },
@@ -33,7 +33,7 @@ export const featuresList = [
 
 export const galleryTitle = "Gallery"
 
-export const gallerySub = "See some ZapZap screenshots."
+export const gallerySub = "Explore unforgettable moments captured in our gallery. Witness how our project comes to life through inspiring images!"
 
 /* files in public/screenshot*/
 export const galleryFiles = [
