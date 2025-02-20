@@ -52,6 +52,10 @@ export const fedoraCoprURL = "https://copr.fedorainfracloud.org/coprs/rafatosta/
 
 export const latestReleaseGithub = "https://github.com/rafatosta/zapzap/releases/latest"
 
+export const appImageFile = "https://github.com/rafatosta/zapzap/releases/latest/download/ZapZap-x86_64.AppImage"
+
+export const aurURL = "https://aur.archlinux.org/packages/zapzap"
+
 export const issuesURL = "https://github.com/rafatosta/zapzap/issues"
 
 export const licenceURL = "https://github.com/rafatosta/zapzap/blob/main/LICENSE"

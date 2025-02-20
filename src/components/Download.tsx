@@ -1,4 +1,4 @@
-import { fedoraCoprURL, flathubURL, githubRepo, issuesURL, licenceURL } from "../data";
+import { fedoraCoprURL, flathubURL, githubRepo, issuesURL, licenceURL, appImageFile, aurURL } from "../data";
 import { Element } from "react-scroll";
 import { SiFedora, SiFlatpak } from "react-icons/si";
 import { memo } from "react";
@@ -19,7 +19,7 @@ const Download: React.FC = memo(() => (
                 <a
                     href={flathubURL}
                     target="_blank"
-                    className="flex flex-col items-center justify-center bg-green-700 hover:bg-green-800 text-white font-semibold py-4 px-6 rounded-lg gap-2 transition-transform transform hover:scale-105"
+                    className="flex flex-col items-center justify-center bg-green-700 hover:bg-green-800 text-white font-semibold py-4 px-6 rounded-lg gap-2 transition-transform transform "
                 >
                     <SiFlatpak className="text-4xl" />
                     <span>Flathub.com</span>
@@ -40,11 +40,31 @@ const Download: React.FC = memo(() => (
                 <a
                     href={fedoraCoprURL}
                     target="_blank"
-                    className="flex flex-col items-center justify-center bg-blue-700 hover:bg-blue-800 text-white font-semibold py-4 px-6 rounded-lg gap-2 transition-transform transform hover:scale-105"
+                    className="flex flex-col items-center justify-center bg-blue-700 hover:bg-blue-800 text-white font-semibold py-4 px-6 rounded-lg gap-2 transition-transform transform "
                 >
                     <SiFedora className="text-4xl" />
                     <span>Fedora Copr</span>
                     <p>For Fedora & Mageia</p>
+                </a>
+
+                <a
+                    href={appImageFile}
+                    target="_blank"
+                    className="flex flex-col items-center justify-center bg-blue-400 hover:bg-blue-500 text-white font-semibold py-4 px-6 rounded-lg gap-2 transition-transform transform "
+                >
+                    <img src="https://appimage.org/images/logo3.svg" className="text-4xl" />
+                    <span>Direct download</span>
+                    <p>AppImage </p>
+                </a>
+
+                <a
+                    href={aurURL}
+                    target="_blank"
+                    className="flex flex-col items-center justify-center text-black bg-slate-50 hover:bg-slate-300 font-semibold py-4 px-6 rounded-lg gap-2 transition-transform transform "
+                >
+                    <img src="https://raw.githubusercontent.com/archlinux/.github/main/profile/archlinux-logo-dark-scalable.svg" className="text-4xl w-32" />
+                    <span>Maintainer: alllexx88 (AutoUpdateBot)</span>
+                    <p>Submitter: bordam</p>
                 </a>
             </div>
 
