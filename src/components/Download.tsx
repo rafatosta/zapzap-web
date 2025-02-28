@@ -1,4 +1,4 @@
-import { fedoraCoprURL, flathubURL, githubRepo, issuesURL, licenceURL, appImageFile, aurURL } from "../data";
+import { fedoraCoprURL, flathubURL, githubRepo, issuesURL, licenceURL, appImageFile, aurURL, opensuseURL } from "../data";
 import { Element } from "react-scroll";
 import { SiFedora, SiFlatpak } from "react-icons/si";
 import { memo } from "react";
@@ -14,6 +14,7 @@ const Download: React.FC = memo(() => (
                     Choose your preferred platform and install Zapzap effortlessly.
                 </p>
             </div>
+            
 
             <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full md:w-3/4 lg:w-2/3">
                 <a
@@ -56,7 +57,15 @@ const Download: React.FC = memo(() => (
                     <span>Direct download</span>
                     <p>AppImage </p>
                 </a>
+            </div>
 
+            <div className="relative flex flex-col justify-center items-center text-center w-11/12 md:w-4/5 lg:w-3/5 xl:w-2/5 gap-y-6 text-[#F0F2F5]">
+                <p className="text-sm md:text-lg lg:text-xl">
+                Versions maintained by the Community
+                </p>
+            </div>
+
+            <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full md:w-3/4 lg:w-2/3">
                 <a
                     href={aurURL}
                     target="_blank"
@@ -65,6 +74,15 @@ const Download: React.FC = memo(() => (
                     <img src="https://raw.githubusercontent.com/archlinux/.github/main/profile/archlinux-logo-dark-scalable.svg" className="text-4xl w-32" />
                     <span>Maintainer: alllexx88 (AutoUpdateBot)</span>
                     <p>Submitter: bordam</p>
+                </a>
+
+                <a
+                    href={opensuseURL}
+                    target="_blank"
+                    className="flex flex-col items-center justify-center text-white bg-green-700 hover:bg-green-900 font-semibold py-4 px-6 rounded-lg gap-2 transition-transform transform "
+                >
+                    <img src="https://build.opensuse.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--aa5cb6f11b842d915c34968e0a4de823d259dcc0/openSUSEBuildService.png" className="text-4xl w-32" />
+                    <span>Maintainer: <a className="hover:text-blue-400" href="https://build.opensuse.org/users/anag+factory">Ana Guerrero</a></span>
                 </a>
             </div>
 

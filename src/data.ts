@@ -56,6 +56,8 @@ export const appImageFile = "https://github.com/rafatosta/zapzap/releases/latest
 
 export const aurURL = "https://aur.archlinux.org/packages/zapzap"
 
+export const opensuseURL = "https://software.opensuse.org/package/zapzap"
+
 export const issuesURL = "https://github.com/rafatosta/zapzap/issues"
 
 export const licenceURL = "https://github.com/rafatosta/zapzap/blob/main/LICENSE"
